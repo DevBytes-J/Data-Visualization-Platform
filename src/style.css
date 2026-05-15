@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand:     #f59e0b;
+  --color-brand-dim: #d97706;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.live-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+.metric-value { transition: all 0.3s ease; }
+
+.glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.dark .glass {
+  background: rgba(20,18,16,0.6);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.dp-bg { background: #f7f5f2; }
+.dark .dp-bg { background: #111009; }
+
+html, body { overflow-x: hidden; }
